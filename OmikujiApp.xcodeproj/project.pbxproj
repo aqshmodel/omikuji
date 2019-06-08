@@ -10,6 +10,7 @@
 		6D0C9A5B22AB9BED00EEE0A1 /* nc177750.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C9A5A22AB9BED00EEE0A1 /* nc177750.wav */; };
 		6D0C9A5F22ABA00400EEE0A1 /* drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C9A5D22ABA00400EEE0A1 /* drum.mp3 */; };
 		6D0C9A6022ABA00400EEE0A1 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C9A5E22ABA00400EEE0A1 /* bell.mp3 */; };
+		6D0C9A6222AC094C00EEE0A1 /* voice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C9A6122AC094C00EEE0A1 /* voice.mp3 */; };
 		6D1D8CDF22AB74B800356497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D8CDE22AB74B800356497 /* AppDelegate.swift */; };
 		6D1D8CE122AB74B800356497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D8CE022AB74B800356497 /* ViewController.swift */; };
 		6D1D8CE422AB74B800356497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D8CE222AB74B800356497 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		6D0C9A5A22AB9BED00EEE0A1 /* nc177750.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nc177750.wav; path = ../../yoshida/syoryuken/nc177750.wav; sourceTree = "<group>"; };
 		6D0C9A5D22ABA00400EEE0A1 /* drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum.mp3; sourceTree = "<group>"; };
 		6D0C9A5E22ABA00400EEE0A1 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		6D0C9A6122AC094C00EEE0A1 /* voice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice.mp3; sourceTree = "<group>"; };
 		6D1D8CDB22AB74B800356497 /* OmikujiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmikujiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1D8CDE22AB74B800356497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1D8CE022AB74B800356497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		6D0C9A5C22ABA00400EEE0A1 /* omikuji_sound */ = {
 			isa = PBXGroup;
 			children = (
+				6D0C9A6122AC094C00EEE0A1 /* voice.mp3 */,
 				6D0C9A5D22ABA00400EEE0A1 /* drum.mp3 */,
 				6D0C9A5E22ABA00400EEE0A1 /* bell.mp3 */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0C9A6222AC094C00EEE0A1 /* voice.mp3 in Resources */,
 				6D0C9A5B22AB9BED00EEE0A1 /* nc177750.wav in Resources */,
 				6D0C9A5F22ABA00400EEE0A1 /* drum.mp3 in Resources */,
 				6D1D8CE922AB74B900356497 /* LaunchScreen.storyboard in Resources */,

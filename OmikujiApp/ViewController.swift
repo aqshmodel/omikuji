@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var overView: UIView!
     @IBOutlet weak var bigLabel: UILabel!
     @IBOutlet weak var happyImage: UIImageView!
+    @IBOutlet weak var imageBottomMargin: NSLayoutConstraint!
     
     
     let resultTexts: [String] = [
@@ -39,8 +40,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupSound(name: "drum")
-//        setupSound(name: "bell") // 効果音を読み込む処理
     }
     
     
@@ -78,7 +77,7 @@ class ViewController: UIViewController {
         
         // おみくじの下辺の制約に、高さの分だけマイナス方向にした値を代入し位置を変える
         stickBottomMargin.constant = stickHeight.constant * -1
-        
+            
         // UIView.animate関数を使うことでアニメーションを行う
         UIView.animate(withDuration: 2.0, animations: {
             
@@ -98,6 +97,13 @@ class ViewController: UIViewController {
             self.setupSound(name: "drum")
             self.resultAudioPlayer.play()
             
+         self.imageBottomMargin.constant += 100
+         UIView.animate(withDuration: 1.0, animations: {
+         self.view.layoutIfNeeded()
+            },completion: { (finished: Bool) in
+            self.setupSound(name: "voice")
+            self.resultAudioPlayer.play()
+         })
     })
         
         }
@@ -107,8 +113,9 @@ class ViewController: UIViewController {
     @IBAction func tapRetryButton(_ sender: Any) {
         // 半透明のViewを隠す
         overView.isHidden = true
-        // 制約の下辺マージンを元々設定されていた0にして位置を戻す
+        // 制約の下辺マージンを元々設定されていた値にして位置を戻す
         stickBottomMargin.constant = 0
+        imageBottomMargin.constant = 5
     } // ここまで関数
     
     
